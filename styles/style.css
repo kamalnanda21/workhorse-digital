@@ -294,7 +294,7 @@ ul {
 /* first section  */
 
 .main-content {
-    margin-left: 250px;
+    padding-left: 250px; /*to not to overflow the right container*/
     background-color: var(--main-bg-color);
 }
 
@@ -352,11 +352,6 @@ ul {
     /* transition: all 0.1s ease; */
 }
 
-/* .arrow:hover {
-    width: 18px;
-    height: 18px;
-} */
-
 .primary-btn:hover {
     background-color: #a00000;
 }
@@ -395,9 +390,6 @@ ul {
     cursor: pointer;
     display: none;
 }
-
-
-
 
 
 
@@ -491,13 +483,19 @@ hr {
 }
 
 .slick-slide img {
-    margin: 0 51px;
+    margin: 0 auto;
+    max-width: 100%;
     opacity: 0.5;
     transition: opacity 0.1s ease-in;
 }
 
 .slick-slide img:hover {
     opacity: 1;
+}
+
+.slick-list {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -627,6 +625,7 @@ hr {
     color: var(--white-color);
     max-width: 565px;
     margin-inline: auto;
+    opacity: 0.6;
 }
 
 .accordion {

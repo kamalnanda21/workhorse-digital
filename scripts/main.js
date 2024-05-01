@@ -1,38 +1,42 @@
+// slick slider
+
 $('.card-area').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 2,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 4,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1200, // 1200px and above
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
+    },
+    {
+      breakpoint: 768, // 768px to 1199px
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 576, // 576px to 767px
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 320, // 320px to 575px
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
 
 
 //services menu
@@ -46,13 +50,17 @@ $(document).ready(function(){
 
 // hamburger menu 
 
-// const hamburger = document.getElementById("hamburger");
-// const navlinks = document.getElementById("navlinks");
+const hamburger = document.getElementById("hamburger");
+const cross = document.querySelector(".cross");
+const mobileNavbar = document.querySelector(".mobile-navbar");
 
-// hamburger.addEventListener("click", ()=>{
-//     navlinks.classList.toggle("navlinks-active");
-//     hamburger.classList.toggle("cross");
-// })
+hamburger.addEventListener("click", function() {
+  mobileNavbar.style.display = "block";
+});
+
+cross.addEventListener("click", function() {
+  mobileNavbar.style.display = "none";
+});
 
 
 // accordian
