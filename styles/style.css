@@ -236,7 +236,7 @@ ul {
 /* side navbar  */
 
 .side-navbar {
-    height: 3988px;
+    height: 4015px;
     width: 250px;
     position: absolute;
     top: 0;
@@ -396,8 +396,9 @@ ul {
 /* section two  */
 
 .section-two {
-    padding-bottom: 120px;
+    margin-bottom: 120px;
     margin-top: -160px;
+    min-height: 350px;
 }
 
 .cards-container {
@@ -451,7 +452,7 @@ ul {
     height: 450px;
     margin-left: -250px;
     position: relative;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 .content-sec3 {
@@ -460,7 +461,7 @@ ul {
 
 .line-content {
     padding-top: 131px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
 }
 
 .line-content span {
@@ -528,7 +529,7 @@ hr {
 }
 
 .sec4-boxes {
-    padding-top: 60px;
+    padding-top: 53px;
     padding-bottom: 120px;
 }
 
@@ -603,7 +604,8 @@ hr {
 /* section sixth  */
 
 .sixth-section {
-    min-height: 800px;
+    min-height: 680px;
+    padding-bottom: 120px;
 }
 
 .outer-content {
@@ -618,7 +620,6 @@ hr {
     font-size: 40px;
     line-height: 60px;
     max-width: 247px;
-    margin-inline: auto;
 }
 
 .outer-content p {
@@ -627,7 +628,6 @@ hr {
     line-height: 30px;
     color: var(--white-color);
     max-width: 565px;
-    margin-inline: auto;
     opacity: 0.6;
 }
 
@@ -894,6 +894,8 @@ textarea {
 /* section two  */
 .about-sec2-content {
     padding: 40px 30px 40px 30px;
+    border: 1px solid #78716C;
+    border-radius: 16px;
 }
 .about-sec2-content h4 {
     font-size: 24px;
@@ -913,6 +915,12 @@ textarea {
     padding-top: 20px;
     padding-bottom: 85px;
 }
+.about-sec2-img {
+    padding: 20px;
+}
+.sec2-about-img {
+    width: 100%;
+}
 
 /* section four  */
 .box-about {
@@ -925,8 +933,6 @@ textarea {
 }
 .sec4-boxes-about {
     padding-bottom: 120px;
-    max-width: calc(100% + 26px);
-    margin-inline: auto;
 }
 .box-about h4 {
     font-size: 24px;

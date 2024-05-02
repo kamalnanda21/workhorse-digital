@@ -87,12 +87,11 @@
     .navbar-btns {
         display: flex;
         align-items: center;
-        gap: 15px;
         white-space: nowrap;
         padding-top: 100px;
     }
-    .btn2 {
-        margin-top: 0;
+    .call {
+        margin-right: 15px;
     }
     .primary-btn {
         padding: 14px 16px 14px 16px;
@@ -117,7 +116,7 @@
         justify-content: space-between;
     }
     .inner-cont h1 {
-        padding-top: 0;
+        padding-top: 153px;
         padding-bottom: 30px;
         max-width: 350px;
         margin-inline: auto;
@@ -144,9 +143,14 @@
 
     .cards-container {
         flex-wrap: wrap;
+        margin-inline: 10px;
+    }
+    .card:not(:last-child) {
+        margin-bottom: 28px;
+        margin-right: 0;
     }
     .section-two {
-        margin-top: 0;
+        margin-top: 78px;
     }
     .card {
         padding-inline: 0;
@@ -169,6 +173,13 @@
     }
     .slick-list {
         padding-left: 40px !important;
+    }
+    .line-content {
+        padding-top: 110px;
+        padding-bottom: 100px;
+    }
+    .slider {
+        margin-bottom: 100px !important;
     }
 
     /* section four  */
@@ -207,6 +218,7 @@
         max-width: 325px;
         font-size: 30px;
         line-height: 45px;
+        padding-bottom: 10px;
     }
     .outer-content p, .panel p {
         font-size: 16px;
@@ -230,20 +242,26 @@
         width: 100%;
     }
     .first-row {
-        display: grid;
+        display: block;
+        padding-bottom: 16px;
     }
     .message {
         margin-left: 0;
     }
     .submit {
         margin-top: 50px;
-        margin-bottom: 100px;
+        margin-bottom: 90px;
     }
     input {
         padding: 16px;
     }
     .heading {
         padding-top: 66px;
+        padding-bottom: 50px;
+    }
+    .name {
+        padding-right: 0;
+        padding-bottom: 16px;
     }
 
 
@@ -303,6 +321,10 @@
     }
     .sec2-about-img {
         width: 100%;
+    }
+    .right {
+        margin-right: 0;
+        margin-bottom: 26px;
     }
 
 
@@ -367,9 +389,14 @@
 
     .cards-container {
         flex-wrap: wrap;
+        margin-inline: 10px;
+    }
+    .card:not(:last-child) {
+        margin-bottom: 28px;
+        margin-right: 0;
     }
     .section-two {
-        margin-top: 0;
+        margin-top: 78px;
     }
 
     /* section three  */
@@ -536,7 +563,6 @@
     }
     .nowrap {
         flex-wrap: nowrap;
-        gap: 10px;
     }
     .sec1-image {
         margin-left: 0;
@@ -574,8 +600,8 @@
     .box {
         height: 550px;
     }
-    .outer-content {
-        gap: 50px;
+    .outer-content h3 {
+        padding-right: 50px;
     }
 
     /* seven section  */
@@ -622,13 +648,7 @@
     /* section one  */
 
     .inner-cont {
-        text-align: center;
-    }
-
-    .inner-cont h1 {
-        padding-top: 150px;
-        width: 100%;
-        margin-inline: auto;
+        text-align: left;
     }
 
 
