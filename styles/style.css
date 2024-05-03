@@ -235,10 +235,14 @@ ul {
 
 /* side navbar  */
 
+.flex-content {
+    display: flex;
+}
+
 .side-navbar {
-    height: 4015px;
     width: 250px;
-    position: absolute;
+    height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: var(--main-bg-color);
@@ -294,7 +298,8 @@ ul {
 /* first section  */
 
 .main-content {
-    padding-left: 250px; /*to not to overflow the right container*/
+    padding-left: 250px;
+    overflow: hidden;
     background-color: var(--main-bg-color);
 }
 
@@ -341,6 +346,8 @@ ul {
     padding: 14px 24px 14px 24px;
     border-radius: 50px;
     color: var(--white-color);
+    position: relative;
+    display: inline-block;
     background-color: var(--primary-btn-bg-color);
     transition: all .1s ease;
 }
@@ -348,7 +355,12 @@ ul {
 .arrow {
     width: 11px;
     height: 11px;
-    /* transition: all 0.1s ease; */
+}
+
+.primary-btn:hover .arrow {
+    transform: translateX(3px);
+    width: 15px;
+    height: 15px;
 }
 
 .primary-btn:hover {
@@ -364,7 +376,14 @@ ul {
     margin-right: 20px;
 }
 
-.animated-circle {
+#arrow {
+    position: fixed;
+    top: 80%;
+    right: 30px;
+    z-index: 100;
+}
+
+#animate-text {
     position: fixed;
     top: 80%;
     right: 30px;
@@ -445,18 +464,12 @@ ul {
 
 /* third section  */
 
-.section-three {
+.content-sec3 {
+    height: 450px;
     background-image: url("../images/sec3-bg-img.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
-    margin-left: -250px;
-    position: relative;
     opacity: 0.5;
-}
-
-.content-sec3 {
-    padding-left: 310px;
 }
 
 .line-content {
@@ -879,12 +892,15 @@ textarea {
 .about {
     height: 2444px;
 }
+
 .content-about {
     min-height: 550px;
 }
+
 .sec1-about, .sect2 {
     padding-bottom: 120px;
 }
+
 .about-head {
     padding-bottom: 50px;
     font-size: 40px;
@@ -897,27 +913,33 @@ textarea {
     border: 1px solid #78716C;
     border-radius: 16px;
 }
+
 .about-sec2-content h4 {
     font-size: 24px;
     line-height: 34px;  
     padding-bottom: 12px;
 }
+
 .about-sec2-content p, .box-about p {
     font-family: "Plus Jakarta Sans";
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
 }
+
 .about-row {
     align-items: center;
 }
+
 .abt {
     padding-top: 20px;
     padding-bottom: 85px;
 }
+
 .about-sec2-img {
     padding: 20px;
 }
+
 .sec2-about-img {
     width: 100%;
 }
@@ -928,24 +950,30 @@ textarea {
     border-radius: 16px;
     padding: 80px 15px 80px 15px;
 }
+
 .border {
     border: 1px solid var(--white-color);
 }
+
 .sec4-boxes-about {
     padding-bottom: 120px;
 }
+
 .box-about h4 {
     font-size: 24px;
     line-height: 32px;
     padding-bottom: 24px;
 }
+
 .margin {
     flex-wrap: nowrap;
     margin-bottom: 26px;
 }
+
 .right {
     margin-right: 26px;
 }
+
 .zero {
     margin-bottom: 0;
 }
