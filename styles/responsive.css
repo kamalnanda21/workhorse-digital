@@ -1,18 +1,153 @@
+/* default classes */
+
+.container {
+    width: 100%;
+    padding-right: 110px;
+    padding-left: 60px;
+    margin-inline: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+    .col-sm-1 {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+
+    .col-sm-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+
+    .col-sm-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .col-sm-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-sm-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+
+    .col-sm-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+
+    .col-sm-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .col-sm-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+
+    .col-sm-11 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+
+    .col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+
+
 @media (max-width: 767px) {
+
     .container {
         max-width: 100%;
         padding: 0 15px;
     }
-}
-
-@media screen and (min-width: 200px) and (max-width: 576px) {
 
     /* mobile navbar  */
 
     .side-navbar, .section-one {
         display: none;
     }
-    
+
     .mobile-navbar {
         display: none;
         background-color: black;
@@ -27,6 +162,10 @@
         position: fixed;
         overflow: hidden;
         z-index: 1000;
+    }
+
+    .justify {
+        justify-content: center;
     }
 
     .primary-menu {
@@ -206,6 +345,7 @@
     .sec4-head {
         font-size: 30px;
         line-height: 45px;
+        text-align: center;
     }
 
     .line-content span {
@@ -223,6 +363,7 @@
 
     .sec4-boxes {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     /* fifth section  */
@@ -235,6 +376,7 @@
 
     .outer-content {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .outer-content h3 {
@@ -302,11 +444,10 @@
     /* footer section  */
 
     .footer-container {
-        height: 1040px;
+        padding-top: 76px;
     }
 
     .footer-logo {
-        margin-top: 76px;
         width: 55px;
     }
 
@@ -376,248 +517,14 @@
 }
 
 
-
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-    
-    .mobile-navbar, .mobile-section-one {
-        display: none;
-    }
-
-    /* side navbar  */
-
-    .side-navbar {
-        width: 200px;
-    }
-
-
-    /* section one  */
-    
-    .inner-cont h1 {
-        width: 100%;
-        padding-bottom: 30px;
-        max-width: 350px;
-        margin-inline: auto;
-        font-size: 36px;
-        font-weight: 400;
-        line-height: 43px;
-        padding-top: 70px;
-    }
-
-    .sec1-image {
-        margin-left: 0;
-        padding-left: 20px;
-        height: 255px;
-    }
-
-    .main-content {
-        padding-left: 200px;
-    }
-
-    .small-content {
-        display: grid;
-        white-space: nowrap;
-        text-align: center;
-    }
-
-    .inner-cont p {
-        font-size: 16px;
-        padding-bottom: 37px;
-    }
-
-    .inner-cont {
-        text-align: center;
-    }
-
-    .sec1-cont {
-        top: 120px;
-    }
-
-    .primary-btn {
-        white-space: nowrap;
-    }
-
-
-    /* section two  */
-
-    .cards-container {
-        flex-wrap: wrap;
-        margin-inline: 10px;
-    }
-
-    .card:not(:last-child) {
-        margin-bottom: 28px;
-        margin-right: 0;
-    }
-
-    .section-two {
-        margin-top: 78px;
-    }
-
-    /* section three  */
-
-    .content-sec3 {
-        padding-left: 300px !important;
-    }
-
-    .card-area {
-        max-width: 100%;
-    }
-
-    .slick-prev {
-        left: 5px !important;
-    }
-
-    .slick-list {
-        padding-left: 20px !important;
-    }
-
-    /* section four  */
-
-    .sec4-head {
-        font-size: 30px;
-        line-height: 45px;
-    }
-
-    .sec4-boxes {
-        flex-wrap: wrap;
-    }
-
-    .inner-box {
-        height: 260px;
-    }
-
-    .box {
-        height: 550px;
-        margin-inline: 10px;
-    }
-
-    /* sixth section  */
-
-    .outer-content {
-        flex-wrap: wrap;
-    }
-
-    .outer-content h3 {
-        margin-inline: 0;
-        max-width: 325px;
-        font-size: 30px;
-        line-height: 45px;
-    }
-
-    .outer-content p, .panel p {
-        font-size: 16px;
-    }
-
-    .accordion {
-        font-size: 18px;
-        line-height: 24px;
-        margin-inline: 10px;
-    }
-
-    /* seven section  */
-
-    .outer-div {
-        padding: 10px;
-    }
-
-    input, textarea {
-        width: 100%;
-    }
-
-    .first-row {
-        display: grid;
-    }
-
-    .message {
-        margin-left: 0;
-    }
-
-    .submit {
-        margin-top: 50px;
-        margin-bottom: 100px;
-    }
-
-    .heading {
-        padding-top: 66px;
-    }
-
-    input {
-        padding: 16px;
-    }
-
-    /* footer section  */
-
-    .footer-container {
-        height: 700px;
-    }
-
-    .footer-logo {
-        width: 55px;
-    }
-
-    .text {
-        font-size: 16px;
-        padding-bottom: 20px;
-    }
-
-    .social-links {
-        padding-bottom: 30px;
-    }
-
-    .contact, .branding {
-        padding-bottom: 30px;
-    }
-    
-    /* sub-footer  */
-
-
-
-        /* ----------about section ------------- */
-
-        .about-head {
-            font-size: 30px;
-            line-height: 45px;
-            letter-spacing: 1px;
-        }
-
-        .margin {
-            flex-wrap: wrap;
-            margin-inline: 10px;
-        }
-
-        .box-about {
-            height: 530px;
-            padding: 40px 20px 0 20px;
-        }
-
-        .box-about h4 {
-            padding-bottom: 10px;
-            max-width: 290px;
-        }
-
-        .box-about p {
-            max-width: 300px;
-        }
-
-        .about-row {
-            flex-direction: column;
-        }
-
-        .screen {
-            max-width: 100%;
-        }
-
-        .about-sec2-content {
-            margin-left: -100px;
-        }
-
-}
-
-
-@media only screen and (min-width:768px) and (max-width: 1200px) {
+@media (min-width:768px) and (max-width: 1199px) {
 
     .mobile-navbar, .mobile-section-one {
         display: none;
+    }
+
+    .section-one, .side-navbar {
+        display: block;
     }
 
     /* side navbar  */
@@ -706,10 +613,6 @@
 
     /* footer section  */
 
-    .footer-container {
-        height: 700px;
-    }
-
     .social-links {
         padding-bottom: 30px;
     }
@@ -729,7 +632,7 @@
 }
 
 
-@media only screen and (min-width:1200px) {
+@media (min-width:1200px) {
 
     .mobile-navbar, .mobile-section-one {
         display: none;
@@ -739,6 +642,9 @@
 
     .inner-cont {
         text-align: left;
+    }
+    .sec1-image {
+        margin-left: 200px;
     }
 
     /* section two  */
