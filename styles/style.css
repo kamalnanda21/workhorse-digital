@@ -171,6 +171,7 @@ ul {
 }
 
 .inner-cont h1 {
+    max-width: 100%;
     padding-top: 231px;
     padding-bottom: 20px;
     font-size: 50px;
@@ -181,11 +182,13 @@ ul {
 }
 
 .inner-cont p {
+    max-width: 100%;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     color: var(--content-color);
     padding-bottom: 30px;
+    width: 575px;
 }
 
 .sec1-image {
@@ -289,7 +292,8 @@ ul {
     justify-content: center;
 }
 
-.card:not(:last-child) {
+.card {
+    margin-bottom: 28px;
     margin-right: 28px;
 }
 
@@ -618,7 +622,7 @@ input, textarea {
 
 .first-row {
     display: flex;
-    justify-content: center;
+    /* justify-content: space-between; */
     padding-bottom: 28px;
 }
 

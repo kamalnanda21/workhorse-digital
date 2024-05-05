@@ -16,6 +16,9 @@
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
+        padding-right: 60px;
+        padding-left: 60px;
+        margin-inline: auto;
     }
 }
 
@@ -295,11 +298,6 @@
         margin-inline: 10px;
     }
 
-    .card:not(:last-child) {
-        margin-bottom: 28px;
-        margin-right: 0;
-    }
-
     .section-two {
         margin-top: 78px;
     }
@@ -530,7 +528,7 @@
     /* side navbar  */
 
     .side-navbar {
-        width: 250px;
+        width: 200px;
     }
 
     /* section one  */
@@ -538,16 +536,19 @@
     .inner-cont h1 {
         width: 100%;
         padding-bottom: 30px;
-        max-width: 350px;
-        margin-inline: auto;
         font-size: 36px;
         font-weight: 400;
         line-height: 43px;
         padding-top: 70px;
     }
 
+    .inner-cont {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
     .nowrap {
-        flex-wrap: nowrap;
+        flex-direction: column-reverse;
     }
 
     .sec1-image {
@@ -556,11 +557,7 @@
     }
 
     .main-content {
-        padding-left: 250px;
-    }
-
-    .inner-cont {
-        text-align: center;
+        padding-left: 200px;
     }
 
     .primary-btn {
@@ -603,12 +600,25 @@
         width: 100%;
     }
 
+    .pad {
+        padding-top: 82px;
+        padding-bottom: 90px;
+    }
+
     input {
         padding: 16px 30px 16px 16px;
     }
 
     .message {
         margin-left: 0;
+    }
+    
+    .name, .email {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
     }
 
     /* footer section  */
@@ -643,9 +653,6 @@
     .inner-cont {
         text-align: left;
     }
-    .sec1-image {
-        margin-left: 200px;
-    }
 
     /* section two  */
 
@@ -654,6 +661,32 @@
     }
     .card h4 {
         white-space: normal;
+    }
+    .section-two {
+        margin-top: 0;
+    }
+
+    /* section seven  */
+
+    .message {
+        margin-left: 0;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .pad {
+        padding-top: 82px;
+        padding-bottom: 90px;
+    }
+
+    .name, .email {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
     }
 
 }
