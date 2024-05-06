@@ -51,15 +51,12 @@ $(document).ready(function(){
 // hamburger menu 
 
 const hamburger = document.getElementById("hamburger");
-const cross = document.querySelector(".cross");
-const mobileNavbar = document.querySelector(".mobile-navbar");
+const mobileNavbar = document.getElementById("mobile-navbar");
 
 hamburger.addEventListener("click", function() {
-  mobileNavbar.style.display = "block";
-});
-
-cross.addEventListener("click", function() {
-  mobileNavbar.style.display = "none";
+  mobileNavbar.classList.toggle("open");
+  hamburger.classList.toggle("cross");
+  $('.submenu').hide();
 });
 
 
