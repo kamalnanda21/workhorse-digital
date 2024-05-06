@@ -725,4 +725,7 @@
         padding-left: 60px;
         margin-inline: auto;
     }
+    .side-navbar {
+        width: 50%;
+    }
 }
