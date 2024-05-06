@@ -171,7 +171,7 @@ ul {
 }
 
 .inner-cont h1 {
-    max-width: 100%;
+    /* max-width: 100%; */
     padding-top: 231px;
     padding-bottom: 20px;
     font-size: 50px;
@@ -192,7 +192,7 @@ ul {
 }
 
 .sec1-image {
-    margin-left: 100px;
+    margin-left: 150px;
     width: 100%;
 }
 
