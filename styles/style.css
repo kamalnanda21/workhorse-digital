@@ -104,8 +104,8 @@ ul {
 
 .side-navbar {
     width: 250px;
-    height: 100%;
-    position: fixed;
+    height: 100vh;
+    position: sticky;
     top: 0;
     left: 0;
     background-color: var(--main-bg-color);
@@ -161,7 +161,6 @@ ul {
 /* first section  */
 
 .main-content {
-    padding-left: 250px;
     overflow: hidden;
     background-color: var(--main-bg-color);
 }
@@ -171,7 +170,6 @@ ul {
 }
 
 .inner-cont h1 {
-    /* max-width: 100%; */
     padding-top: 231px;
     padding-bottom: 20px;
     font-size: 50px;
@@ -182,7 +180,6 @@ ul {
 }
 
 .inner-cont p {
-    max-width: 100%;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -752,9 +749,6 @@ textarea {
 /* ----about section css ----- */
 
 /* section one  */
-.about {
-    height: 2444px;
-}
 
 .content-about {
     min-height: 550px;
