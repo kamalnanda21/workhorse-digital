@@ -100,10 +100,11 @@ ul {
 
 .flex-content {
     display: flex;
+    background-color: var(--main-bg-color);
 }
 
 .side-navbar {
-    width: 250px;
+    width: 274px;
     height: 100vh;
     position: sticky;
     top: 0;
@@ -148,6 +149,7 @@ ul {
     background-repeat: no-repeat;
     background-position: 18% 15%;
     color: var(--white-color) !important;
+    transition: all 0.5s ease;
 }
 
 .down-arrow {
@@ -161,6 +163,8 @@ ul {
 /* first section  */
 
 .main-content {
+    max-width: 100%;
+    margin-inline: auto;
     overflow: hidden;
     background-color: var(--main-bg-color);
 }
@@ -190,7 +194,7 @@ ul {
 
 .sec1-image {
     margin-left: 100px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .small-content {
@@ -212,7 +216,7 @@ ul {
     position: relative;
     display: inline-block;
     background-color: var(--primary-btn-bg-color);
-    transition: all .1s ease;
+    transition: all 1s ease;
 }
 
 .arrow {
@@ -222,6 +226,7 @@ ul {
 
 .primary-btn:hover .arrow {
     transform: translateX(5px);
+    transition: all 0.3s ease;
 }
 
 .primary-btn:hover {

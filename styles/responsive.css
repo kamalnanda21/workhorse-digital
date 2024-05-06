@@ -665,10 +665,6 @@
     .inner-cont {
         text-align: left;
     }
-    
-    .sec1-image {
-        margin-left: 150px;
-    }
 
     /* section two  */
 
@@ -719,17 +715,11 @@
 
 }
 
-@media (min-width: 1480px) {
+/* @media (min-width: 1480px) {
     .container {
-        max-width: 100%;
-        padding-right: 110px;
-        padding-left: 60px;
+        max-width: 1540px;
+        padding-right: 100px;
+        padding-left: 100px;
         margin-inline: auto;
     }
-    .side-navbar {
-        width: 50%;
-    }
-    .pad {
-        padding-inline: 250px;
-    }
-}
+} */
