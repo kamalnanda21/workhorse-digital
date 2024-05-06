@@ -440,6 +440,7 @@
 
     .footer-container {
         padding-top: 76px;
+        padding-bottom: 50px;
     }
 
     .footer-logo {
@@ -727,5 +728,8 @@
     }
     .side-navbar {
         width: 50%;
+    }
+    .pad {
+        padding-inline: 250px;
     }
 }
