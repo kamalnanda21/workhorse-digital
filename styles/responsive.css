@@ -263,7 +263,6 @@
     .inner-cont h1 {
         padding-top: 153px;
         padding-bottom: 30px;
-        max-width: 350px;
         margin-inline: auto;
         font-size: 36px;
         font-weight: 400;
@@ -403,10 +402,6 @@
 
     /* seven section  */
 
-    .outer-div {
-        padding: 10px;
-    }
-
     input, textarea {
         width: 100%;
     }
@@ -482,6 +477,7 @@
         font-size: 30px;
         line-height: 45px;
         letter-spacing: 1px;
+        text-align: center;
     }
 
     .margin {
@@ -492,6 +488,8 @@
     .box-about {
         height: 340px;
         padding: 40px 20px 0 20px;
+        margin-bottom: 26px;
+        margin-inline: 13px;
     }
 
     .box-about h4 {
@@ -508,8 +506,11 @@
     }
 
     .right {
-        margin-right: 0;
         margin-bottom: 26px;
+    }
+
+    .screen {
+        flex: 0 0 100%;
     }
 
 
@@ -541,6 +542,10 @@
         font-weight: 400;
         line-height: 43px;
         padding-top: 70px;
+    }
+
+    .inner-cont p {
+        width: 100%;
     }
 
     .inner-cont {
@@ -642,7 +647,14 @@
     .box-about {
         height: 400px;
         padding: 40px 20px 0 20px;
+        margin-bottom: 26px;
+        margin-inline: 13px;
     }
+
+    .margin {
+        flex-wrap: nowrap;
+    }
+
 
 }
 
@@ -657,6 +669,10 @@
 
     .inner-cont {
         text-align: left;
+    }
+    
+    .sec1-image {
+        margin-left: 150px;
     }
 
     /* section two  */
@@ -698,6 +714,11 @@
 
     input {
         width: 100%;
+    }
+
+    .margin {
+        flex-wrap: nowrap;
+        margin-bottom: 26px;
     }
 
 }

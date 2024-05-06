@@ -192,7 +192,7 @@ ul {
 }
 
 .sec1-image {
-    margin-left: 150px;
+    margin-left: 100px;
     width: 100%;
 }
 
@@ -224,9 +224,7 @@ ul {
 }
 
 .primary-btn:hover .arrow {
-    transform: translateX(3px);
-    width: 15px;
-    height: 15px;
+    transform: translateX(5px);
 }
 
 .primary-btn:hover {
@@ -240,6 +238,10 @@ ul {
     line-height: 28px;
     color: var(--content-color);
     margin-right: 20px;
+}
+
+.number:hover {
+    color: #a00000;
 }
 
 #arrow {
@@ -575,12 +577,6 @@ hr {
     min-height: 710px;
 }
 
-.outer-div {
-    padding: 82px 214px 90px 213px;
-    max-width: 1015px;
-    margin-inline: auto;
-}
-
 .heading {
     padding-bottom: 36px;
 }
@@ -774,6 +770,10 @@ textarea {
     line-height: 60px;  
 }
 
+.justify {
+    justify-content: center;
+}
+
 /* section two  */
 .about-sec2-content {
     padding: 40px 30px 40px 30px;
@@ -785,6 +785,7 @@ textarea {
     font-size: 24px;
     line-height: 34px;  
     padding-bottom: 12px;
+    letter-spacing: 1px;
 }
 
 .about-sec2-content p, .box-about p {
@@ -834,7 +835,7 @@ textarea {
 
 .margin {
     flex-wrap: nowrap;
-    margin-bottom: 26px;
+    /* margin-bottom: 26px; */
 }
 
 .right {
