@@ -231,7 +231,7 @@
 
     .logo-image {
         width: 55px;
-        padding-top: 60px;
+        padding-top: 55px;
         margin: 0;
     }
 
@@ -277,7 +277,7 @@
     }
 
     .inner-cont h1 {
-        padding-top: 153px;
+        padding-top: 0;
         padding-bottom: 30px;
         margin-inline: auto;
         font-size: 36px;
@@ -299,7 +299,6 @@
     .btn1 {
         padding: 10px 15px;
         white-space: nowrap;
-        margin-bottom: 78px;
     }
 
     /* section two  */
@@ -311,6 +310,7 @@
 
     .section-two {
         margin-top: 78px;
+        margin-bottom: 110px;
     }
 
     .card {
@@ -343,8 +343,12 @@
     }
 
     .line-content {
-        padding-top: 110px;
-        padding-bottom: 100px;
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+
+    .content-sec3 {
+        height: 320px;
     }
 
     .slider {
@@ -381,6 +385,10 @@
 
     .fifth-section-img {
         padding: 25px;
+    }
+
+    .fifth-section {
+        padding-bottom: 0;
     }
 
     /* sixth section  */
