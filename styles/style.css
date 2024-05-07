@@ -22,6 +22,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: "Anton", sans-serif;
     color: var(--white-color);
+    font-weight: 400;
 }
 
 body, p {
@@ -184,7 +185,6 @@ ul {
     padding-top: 231px;
     padding-bottom: 20px;
     font-size: 50px;
-    font-weight: 400;
     line-height: 60px;
     width: 650px;
     color: var(--white-color);
@@ -233,7 +233,7 @@ ul {
 
 .primary-btn:hover .arrow {
     transform: translateX(5px);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .primary-btn:hover {
@@ -315,8 +315,6 @@ ul {
 .card h4 {
     font-size: 24px;
     line-height: 34px;
-    letter-spacing: 0.9px;
-    color: var(--white-color);
     padding-bottom: 8px;
     white-space: nowrap;
 }
@@ -434,7 +432,6 @@ hr {
     padding-bottom: 10px;
     font-size: 24px;
     line-height: 32px;
-    letter-spacing: 1px;
 }
 
 .box p {
@@ -534,6 +531,9 @@ hr {
     font-weight: 600;
     line-height: 26px;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
   
 .active-acc, .accordion:hover {
@@ -589,7 +589,6 @@ hr {
 .heading h2 {
     text-align: center;
     max-width: 430px;
-    letter-spacing: 1px;
     margin-inline: auto;
 }
 
@@ -629,6 +628,7 @@ input, textarea {
 
 textarea {
     padding: 16px 24px 113px 16px ;
+    resize: none;
 }
 
 .message {
@@ -649,7 +649,6 @@ textarea {
 .footer-container {
     height: 100%;
     font-family: "Plus Jakarta Sans";
-    letter-spacing: 1px;
 }
 
 .footer {
@@ -686,6 +685,13 @@ textarea {
     font-weight: 400;
     line-height: 31px;
     padding-bottom: 17px;
+    color: var(--white-color);
+    opacity: 0.6;
+}
+
+.color {
+    color: var(--white-color);
+    opacity: 0.6;
 }
 
 .social-links {
@@ -697,7 +703,6 @@ textarea {
 .social-links a {
     width: 24px;
     height: 24px;
-    opacity: 0.5;
     transition: opacity 0.3s ease;
 }
 
@@ -712,14 +717,15 @@ textarea {
 }
 
 .sub-head {
+    font-family: "Plus Jakarta Sans";
     font-size: 16px;
-    font-weight: 400;
     line-height: 20px;
     color: var(--white-color);
     padding-bottom: 14px;
 }
 
 .card-para {
+    font-family: "Plus Jakarta Sans";
     font-size: 20px;
     font-weight: 700;
     line-height: 25px;
@@ -787,7 +793,6 @@ textarea {
     font-size: 24px;
     line-height: 34px;  
     padding-bottom: 12px;
-    letter-spacing: 1px;
 }
 
 .about-sec2-content p, .box-about p {

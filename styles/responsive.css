@@ -281,7 +281,6 @@
         padding-bottom: 30px;
         margin-inline: auto;
         font-size: 36px;
-        font-weight: 400;
         line-height: 43px;
         width: 100%;
     }
@@ -494,7 +493,6 @@
     .about-head {
         font-size: 30px;
         line-height: 45px;
-        letter-spacing: 1px;
         text-align: center;
     }
 
