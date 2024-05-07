@@ -4,7 +4,7 @@ $('.card-area').slick({
   dots: true,
   infinite: false,
   speed: 300,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 2,
   responsive: [
     {
@@ -23,13 +23,6 @@ $('.card-area').slick({
     },
     {
       breakpoint: 576, // 576px to 767px
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 320, // 320px to 575px
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -74,6 +67,7 @@ var i;
 var firstPanel = acc[0].nextElementSibling;
 firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
 acc[0].classList.add("active-acc");
+acc[0].style.fontSize = "18px";
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
@@ -81,6 +75,7 @@ for (i = 0; i < acc.length; i++) {
     for (var j = 0; j < acc.length; j++) {
       if (acc[j] !== this) {
         acc[j].classList.remove("active-acc");
+        acc[j].style.fontSize = "16px";
         var panel = acc[j].nextElementSibling;
         panel.style.maxHeight = null;
       }
@@ -88,11 +83,14 @@ for (i = 0; i < acc.length; i++) {
     
     // Toggle active class and open/close panel
     this.classList.toggle("active-acc");
+    this.style.fontSize = "18px";
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
+      this.style.fontSize = "16px";
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
+      this.style.fontSize = "18px";
     } 
   });
 }
